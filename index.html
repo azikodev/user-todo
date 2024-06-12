@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+</head>
+<body class="p-10">
+    <div class="mb-4">
+        <input type="text" placeholder="Ismingizni kiriting boy aka!" id="fname" class="input input-bordered w-full mb-2" required>
+        <input type="email" placeholder="Familyangizni ham kiritib qo'yaveringchi" id="lname" class="input input-bordered w-full mb-2" required>
+        <input type="number" placeholder="Necha yoshdasz hoji aka!" id="age" class="input input-bordered w-full mb-2" required>
+        <input type="date" placeholder="Qachon tug'ilgan ediz?" id="birth" class="input input-bordered w-full mb-2" required>
+        <input type="tel" placeholder="Tel raqamizni qoldiring!" id="number" class="input input-bordered w-full mb-2" required>
+        <button class="btn btn-primary w-full">Ma'lumotlarni saqlash</button>
+        <p id="errorMessage" class="text-red-500 mt-2 hidden">Inputlarni to'liq to'ldiring boyaka! 👌</p>
+    </div>
+    <ul id="userList" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"></ul>
+
+    <div id="toastContainer" class="toast toast-top toast-end hidden">
+        <div class="alert alert-success">
+            <div>
+                <span class="toast-message">Malumotlaringiz muvaffaqiyatli saqlandi hoji aka! 🤖</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/app.js"></script>
+</body>
+</html>

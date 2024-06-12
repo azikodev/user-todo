@@ -53,7 +53,7 @@ const displayUsers = () => {
     userList.innerHTML = '';
     users.forEach((user, index) => {
         const userItem = document.createElement('li');
-        userItem.classList.add('bg-accent', 'p-4', 'mb-4', 'shadow-md', 'border-solid', 'border-2', 'border-sky-500', 'rounded-md', 'flex', 'justify-between', 'items-center');
+        userItem.classList.add('bg-accent', 'p-4', 'mb-4', 'shadow-md', 'border-solid', 'border-2', 'border-sky-500', 'rounded-md', 'flex', 'justify-between',  'flex-col', 'gap-10');
         userItem.innerHTML = `
             <div>
                 <h3 class="text-xl font-semibold">Ism: ${user.firstName}</h3>

@@ -49,7 +49,7 @@ const displayUsers = () => {
                 <p class="text-gray-600">Tug'ilgan yil: ${user.birthDate}</p>
                 <p class="text-gray-600">Telefon raqam: ${user.phoneNumber}</p>
             </div>
-            <button class="btn btn-danger ml-4" onclick="deleteUser(${index})">Delete</button>
+            <button class="btn btn-danger " onclick="deleteUser(${index})">Delete</button>
         `;
         userList.appendChild(userItem);
     });
